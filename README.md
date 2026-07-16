@@ -9,7 +9,7 @@ Starbucks kartı mantığı — ama ada genelindeki tüm kafe ve kahve dükkânl
 - ☕ **Ön-ödemeli sanal cüzdan** — kredini yükle, ada genelinde harca
 - 📱 **QR ile ödeme** — 2 saniyede, POS gerektirmez
 - 🎁 **Ada-geneli puan** — hangi kafede olursan ol, ödül birikir
-- 🗺️ **3 şehir ağı** — Lefkoşa, Girne, Mağusa
+- 🗺️ **6 ilçe ağı** — Lefkoşa, Girne, Gazimağusa, İskele, Güzelyurt, Lefke
 - 💼 **Kafe için** — ortak müşteri havuzu, nakit akışı, analitik
 
 ## İş Modeli
@@ -40,7 +40,7 @@ Landing ve pitch deck birbirine bağlı:
 
 ```bash
 # kök dizinde
-python3 -m http.server 8090
+python3 -m http.server 8090 --bind 127.0.0.1
 # tarayıcıda:
 # http://localhost:8090/ada-wallet/index.html
 # http://localhost:8090/ada-wallet/pitch.html
@@ -55,6 +55,10 @@ python3 -m http.server 8090
 5. **Deploy**
 
 İletişim formu **Formspree** (`f/meebyvve`) üzerinden çalışır — endpoint'i `index.html` içinde değiştirebilirsin.
+
+## Gizlilik Notu
+
+Sayfalar Google Fonts CDN (`fonts.googleapis.com`) üzerinden font yükler. HTTPS şifreli olsa da **SNI alanı düz metin** gider; yani ziyaretçinin ISP'i "hangi siteye girdiğini" (hostname) görür. Font CDN trafiği de bu kapsamdadır. Tam gizlilik isteniyorsa fontlar yerel (`/fonts/`) olarak gömülebilir.
 
 ## İletişim
 
