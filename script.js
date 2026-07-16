@@ -54,6 +54,8 @@ const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+  // Honeypot: botlar gizli alanı doldurursa gönderimi durdur
+  if (form._gotcha && form._gotcha.value) return;
   const name = form.name.value.trim();
   if (!name) return;
   const endpoint = form.getAttribute('action');

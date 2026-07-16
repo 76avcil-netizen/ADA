@@ -185,6 +185,8 @@
       </div>
       <form class="contact-form" id="contactForm" action="https://formspree.io/f/meebyvve" method="POST">
         <input type="hidden" name="_replyto" value="hello@adawallet.com" />
+        <!-- Spam koruması: botlar doldurursa Formspree reddeder -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
         <input type="text" name="name" placeholder="Adınız" required />
         <input type="email" name="email" placeholder="E-posta" required />
         <select name="rol" required>
