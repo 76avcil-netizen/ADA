@@ -33,8 +33,11 @@
     .hint{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:.8rem;z-index:10}
     table{margin-top:30px;border-collapse:collapse;width:100%;max-width:760px}
     th,td{text-align:left;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.09);color:var(--muted)}
-    th{color:var(--text);font-family:'Sora'}
-    .tag{display:inline-block;padding:4px 12px;border-radius:999px;background:rgba(20,184,166,.15);color:var(--accent-2);font-size:.8rem;font-weight:600}
+    .footer-link{position:fixed;left:24px;bottom:24px;z-index:10;color:var(--muted);text-decoration:none;font-size:.85rem;opacity:.7}
+    .footer-link:hover{opacity:1;color:var(--accent)}
+    /* Scroll reveal */
+    .slide .kicker,.slide .big,.slide .lead,.slide .cell{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+    .slide.in-view .kicker,.slide.in-view .big,.slide.in-view .lead,.slide.in-view .cell{opacity:1;transform:none}
   </style>
 </head>
 <body>
@@ -109,8 +112,8 @@
       <div class="kicker">Pazar</div>
       <h2 class="big">Hedef <span class="grad">ada</span>.</h2>
       <div class="grid">
-        <div class="cell"><div class="num">120+</div><p>Hedef kafe (3 şehir)</p></div>
-        <div class="cell"><div class="num">3</div><p>Şehir: Lefkoşa, Girne, Mağusa</p></div>
+        <div class="cell"><div class="num">120+</div><p>Hedef kafe (6 ilçe)</p></div>
+        <div class="cell"><div class="num">6</div><p>İlçe: Lefkoşa, Girne, Gazimağusa, İskele, Güzelyurt, Lefke</p></div>
         <div class="cell"><div class="num">2</div><p>Hedef kitle: yerel + turist</p></div>
       </div>
     </section>
@@ -162,6 +165,13 @@
     document.addEventListener('keydown',e=>{
       if(e.key==='ArrowDown'){deck.scrollBy({top:window.innerHeight});}
       if(e.key==='ArrowUp'){deck.scrollBy({top:-window.innerHeight});}
+    });
+    // Scroll reveal: slayt görünür olunca içerik belirsin
+    document.querySelectorAll('.slide').forEach(s=>{
+      const obs=new IntersectionObserver((es)=>{
+        es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in-view'); });
+      },{threshold:0.2});
+      obs.observe(s);
     });
   </script>
 </body>
