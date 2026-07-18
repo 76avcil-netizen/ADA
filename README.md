@@ -2,7 +2,7 @@
 
 **Bir ada, tek cüzdan.** KKTC'nin tüm kahve dükkânlarında geçerli ön-ödemeli sadakat ve ödeme ağı.
 
-Starbucks kartı mantığı — ama ada genelindeki tüm kafe ve kahve dükkânları için. Kullanıcı tek bir cüzdana kredi yükler, katılımcı kafede QR ile öder. Lefkoşa'dan Girne'ye, Mağusa'ya — aynı bakiye, aynı puan.
+Ön-ödemeli ada-geneli sadakat ağı — ada genelindeki tüm kafe ve kahve dükkânları için. Kullanıcı tek bir cüzdana kredi yükler, katılımcı kafede QR ile öder. Lefkoşa'dan Girne'ye, Mağusa'ya — aynı bakiye, aynı puan.
 
 ## Özellikler
 
