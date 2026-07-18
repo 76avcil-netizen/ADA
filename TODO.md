@@ -7,6 +7,7 @@
 - [x] Yerel dev komutu `127.0.0.1`'e sabitlendi (`python3 -m http.server 8090 --bind 127.0.0.1`)
 - [x] pitch.html'e scroll-reveal animasyonu eklendi (script.js'e dokunmadan, kendi script'i içinde)
 - [x] pitch.html "3 şehir" → "6 ilçe" tutarlılığı sağlandı
+- [x] Harita (#map) bölümü tamamen kaldırıldı (SVG + PNG + nav linki) — 6 ilçe bilgisi hero istatistiğine taşındı ("6 İlçe")
 
 ## 🔲 Sıradaki İşler
 - [ ] Güvenlik: Formspree honeypot alanı ekle (spam koruması)

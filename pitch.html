@@ -55,7 +55,7 @@
 
   <div class="deck" id="deck">
     <!-- 1 Kapak -->
-    <section class="slide" id="s1">
+    <section class="slide in-view" id="s1">
       <div class="kicker">Pitch Deck · 2026</div>
       <h1 class="big">ADA<span class="grad">.</span></h1>
       <p class="lead">Bir ada, tek cüzdan. KKTC'nin tüm kahve dükkânlarında geçerli ön-ödemeli sadakat ve ödeme ağı.</p>
@@ -170,7 +170,7 @@
     document.querySelectorAll('.slide').forEach(s=>{
       const obs=new IntersectionObserver((es)=>{
         es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in-view'); });
-      },{threshold:0.2});
+      },{threshold:0});
       obs.observe(s);
     });
   </script>
