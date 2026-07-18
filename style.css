@@ -101,6 +101,7 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.15; }
 .contact-meta { margin-top: 24px; display: flex; flex-direction: column; gap: 8px; color: var(--muted); }
 .contact-form { display: flex; flex-direction: column; gap: 14px; }
 .contact-form input, .contact-form textarea, .contact-form select { width: 100%; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text); font-family: inherit; font-size: 0.95rem; resize: vertical; }
+.contact-form select option { background: var(--bg-2); color: var(--text); }
 .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { outline: none; border-color: var(--accent-2); }
 .form-note { color: var(--accent-2); font-size: 0.9rem; min-height: 1.2em; }
 
