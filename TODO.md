@@ -17,6 +17,7 @@
 - [x] Vercel deploy yapılandırması — `vercel.json` eklendi (build boş, output `.`), statik servis 200 doğrulandı (18 Tem)
 - [x] Ölü varlık temizliği — referanssız `assets/cyprus-districts.png` .gitignore'a alındı (18 Tem)
 - [x] index.html WhatsApp butonu görünür hale getirildi (`.btn-whatsapp`), pitch.html'e font preconnect eklendi (18 Tem)
+- [x] Copy/iddia tutarlılığı + mütevazi ton — "tüm" overclaim'i kaldırıldı (katılımcı), 120 hedef/netleştirildi (120+→120, "katılan"→"hedef"), "ada-geneli"→"ada genelinde" yazım düzeltildi (18 Tem)
 
 ## 📁 Değişiklik → Etki Haritası
 | Dosya | Değişirse etkilenen | Etkilenmez |

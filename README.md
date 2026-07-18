@@ -1,15 +1,15 @@
 # ADA Wallet
 
-**Bir ada, tek cüzdan.** KKTC'nin tüm kahve dükkânlarında geçerli ön-ödemeli sadakat ve ödeme ağı.
+**Bir ada, tek cüzdan.** KKTC'de katılımcı kahve dükkânlarında geçerli ön-ödemeli sadakat ve ödeme ağı.
 
-Ön-ödemeli ada-geneli sadakat ağı — ada genelindeki tüm kafe ve kahve dükkânları için. Kullanıcı tek bir cüzdana kredi yükler, katılımcı kafede QR ile öder. Lefkoşa'dan Girne'ye, Mağusa'ya — aynı bakiye, aynı puan.
+Ön-ödemeli ada genelinde sadakat ağı — ada genelindeki katılımcı kafe ve kahve dükkânları için. Kullanıcı tek bir cüzdana kredi yükler, katılımcı kafede QR ile öder. Lefkoşa'dan Girne'ye, Mağusa'ya — aynı bakiye, aynı puan.
 
 ## Özellikler
 
 - ☕ **Ön-ödemeli sanal cüzdan** — kredini yükle, ada genelinde harca
 - 📱 **QR ile ödeme** — 2 saniyede, POS gerektirmez
-- 🎁 **Ada-geneli puan** — hangi kafede olursan ol, ödül birikir
-- 🗺️ **6 ilçe ağı** — Lefkoşa, Girne, Gazimağusa, İskele, Güzelyurt, Lefke
+- 🎁 **Ada genelinde puan** — hangi kafede olursan ol, ödül birikir
+- 🗺️ **6 ilçe hedefi** — Lefkoşa, Girne, Gazimağusa, İskele, Güzelyurt, Lefke
 - 💼 **Kafe için** — ortak müşteri havuzu, nakit akışı, analitik
 
 ## İş Modeli
