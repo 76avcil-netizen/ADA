@@ -10,11 +10,10 @@
 - [x] Harita (#map) bölümü tamamen kaldırıldı (SVG + PNG + nav linki) — 6 ilçe bilgisi hero istatistiğine taşındı ("6 İlçe")
 
 ## 🔲 Sıradaki İşler
-- [ ] Güvenlik: Formspree honeypot alanı ekle (spam koruması)
+- [x] Güvenlik: Formspree honeypot alanı ekle (spam koruması) — commit 0ca64a7
 - [ ] Güvenlik: Google Fonts CDN gizlilik notu (SNI/ISP görünürlüğü) — yerel font'a geçiş değerlendir
-- [ ] Kaliteli commit convention devamı (feat/docs/style/fix + changeset disiplini)
-- [ ] pitch.html ↔ index.html görsel tema birliği kontrolü
-- [ ] Mobil (responsive) test: index.html + pitch.html telefon genişliğinde
+- [x] pitch.html ↔ index.html görsel tema birliği — :root paletleri birebir aynı (doğrulandı 18 Tem)
+- [x] Mobil (responsive) test — hero-title clamp, card/pricing auto-fit grid, nav hamburger, contact 1 kolon (doğrulandı 18 Tem)
 - [ ] Vercel deploy doğrulama (build command boş, output `.`)
 
 ## 📁 Değişiklik → Etki Haritası
