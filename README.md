@@ -58,7 +58,11 @@ python3 -m http.server 8090 --bind 127.0.0.1
 
 ## Gizlilik Notu
 
-Sayfalar Google Fonts CDN (`fonts.googleapis.com`) üzerinden font yükler. HTTPS şifreli olsa da **SNI alanı düz metin** gider; yani ziyaretçinin ISP'i "hangi siteye girdiğini" (hostname) görür. Font CDN trafiği de bu kapsamdadır. Tam gizlilik isteniyorsa fontlar yerel (`/fonts/`) olarak gömülebilir.
+Sayfalar Google Fonts CDN (`fonts.googleapis.com`) üzerinden font yükler. HTTPS şifreli olsa da **SNI alanı düz metin** gider; yani ziyaretçinin ISP'i "hangi siteye girdiğini" (hostname) görür. Font CDN trafiği de bu kapsamdadır. Bunun etkisini azaltmak için:
+
+- Font isteği `display=swap` ile **non-blocking** yüklenir (metin font yüklenmeden görünür).
+- `preconnect` ile CDN handshake hızlandırılır.
+- Tam gizlilik isteniyorsa fontlar ileride yerel (`/fonts/`) olarak gömülebilir (henüz yapılmadı).
 
 ## İletişim
 

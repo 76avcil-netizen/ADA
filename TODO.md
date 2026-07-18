@@ -11,10 +11,12 @@
 
 ## 🔲 Sıradaki İşler
 - [x] Güvenlik: Formspree honeypot alanı ekle (spam koruması) — commit 0ca64a7
-- [ ] Güvenlik: Google Fonts CDN gizlilik notu (SNI/ISP görünürlüğü) — yerel font'a geçiş değerlendir
+- [x] Güvenlik: Google Fonts CDN gizlilik notu — README'de SNI/ISP görünürlüğü belirtildi, `display=swap` ile non-blocking; yerel font'a geçiş ileride değerlendirilebilir (18 Tem)
 - [x] pitch.html ↔ index.html görsel tema birliği — :root paletleri birebir aynı (doğrulandı 18 Tem)
 - [x] Mobil (responsive) test — hero-title clamp, card/pricing auto-fit grid, nav hamburger, contact 1 kolon (doğrulandı 18 Tem)
-- [ ] Vercel deploy doğrulama (build command boş, output `.`)
+- [x] Vercel deploy yapılandırması — `vercel.json` eklendi (build boş, output `.`), statik servis 200 doğrulandı (18 Tem)
+- [x] Ölü varlık temizliği — referanssız `assets/cyprus-districts.png` .gitignore'a alındı (18 Tem)
+- [x] index.html WhatsApp butonu görünür hale getirildi (`.btn-whatsapp`), pitch.html'e font preconnect eklendi (18 Tem)
 
 ## 📁 Değişiklik → Etki Haritası
 | Dosya | Değişirse etkilenen | Etkilenmez |
